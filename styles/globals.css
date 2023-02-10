@@ -79,14 +79,15 @@ body{
   }
   .links{
     flex-direction: column;
-    position: absolute;    
+    position: absolute;  
+    top: -300px;  
     font-size: 30px;
     width: 100%;
     overflow: hidden;
-    height: 0px;
+    height: 300px;
     background-color: rgb(1, 36, 1);
     align-items: start;
-    transition: 1s ease-in;
+    transition: 0.9s ease-in;
     z-index: 100;
   }
   .navlinks{
@@ -116,7 +117,7 @@ body{
   }
   .shownavdiv{
     transition: 0.75s ease-in-out;
-    height: 300px;
+    top: 0px;
     padding-top: 80px;
     border-bottom:10px solid green;
 
