@@ -86,7 +86,7 @@ body{
     height: 0px;
     background-color: rgb(1, 36, 1);
     align-items: start;
-    transition: 1.5s ease-in-out;
+    transition: 1s ease-in;
     z-index: 100;
   }
   .navlinks{
