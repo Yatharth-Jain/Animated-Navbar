@@ -18,7 +18,7 @@ function MyApp({ Component, pageProps }) {
             width: "100%",
             cursor: "default",
           }}
-          transition={{ duration: 1, ease: [0.2, 0.56, .76, 1] }}
+          transition={{ duration: 1, ease: [0.32, 0, 0.46, 1] }}
         >
           <Component {...pageProps} />
         </motion.div>

@@ -12,22 +12,22 @@ export default function Navbar() {
       </Link>
       <ul className={`links ${shownav==1 && 'shownavdiv'}`} ref={navbardiv}>
         <li>
-          <Link href="/" className="navlinks" >
+          <Link href="/" className="navlinks" onClick={() => setShownav(shownav^1)}>
             Home
           </Link>
         </li>
         <li>
-          <Link href="/about" className="navlinks" >
+          <Link href="/about" className="navlinks" onClick={() => setShownav(shownav^1)}>
             About
           </Link>
         </li>
         <li>
-          <Link href="/pricing" className="navlinks" >
+          <Link href="/pricing" className="navlinks" onClick={() => setShownav(shownav^1)}>
             Pricing
           </Link>
         </li>
         <li>
-          <Link href="/contact" className="navlinks" >
+          <Link href="/contact" className="navlinks" onClick={() => setShownav(shownav^1)}>
             Contact
           </Link>
         </li>
