@@ -2,11 +2,13 @@ import "../styles/globals.css";
 import { AnimatePresence, motion } from "framer-motion";
 import { useState } from "react";
 import { useRouter } from "next/router";
+import MobNavbar from "../src/components/Navbar/MobNavbar";
 
 function MyApp({ Component, pageProps }) {
   var route = useRouter();
   return (
     <>
+      <MobNavbar/>
       <AnimatePresence>
         <motion.div
           key={route.pathname}
