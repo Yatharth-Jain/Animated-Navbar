@@ -12,6 +12,12 @@ function MyApp({ Component, pageProps }) {
       <AnimatePresence>
         <motion.div
           key={route.pathname}
+          style={{
+            minHeight:'100vh',
+            background:'white',
+            overflow:'auto'
+            
+          }}
           initial={{ y: "100vh" }}
           animate={{ y: ["200%","0%"] }}
           exit={{
@@ -20,11 +26,12 @@ function MyApp({ Component, pageProps }) {
             width: "100%",
             cursor: "default",
           }}
-          transition={{ duration: 1, ease: [0.32, 0, 0.46, 1] }}
+          transition={{ duration: 0.75, ease: [0.32, 0, 0.46, 1] }}
         >
           <Component {...pageProps} />
         </motion.div>
       </AnimatePresence>
+        
     </>
   );
 }

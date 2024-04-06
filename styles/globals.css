@@ -80,14 +80,15 @@ body{
   .links{
     flex-direction: column;
     position: absolute;  
-    top: -300px;  
+    top: -400px;  
     font-size: 30px;
     width: 100%;
     overflow: hidden;
-    height: 300px;
+    height: 400px;
     background-color: rgb(1, 36, 1);
     align-items: start;
-    transition: 0.9s ease-in;
+    transition-delay: 0.5;
+    transition: 1.5s cubic-bezier(.77,0,.175,1),visibility 1s,-webkit-transform 1s cubic-bezier(.77,0,.175,1);
     z-index: 100;
   }
   .navlinks{

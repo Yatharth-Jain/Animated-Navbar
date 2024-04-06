@@ -5,6 +5,8 @@ export default function about() {
     <>
       <Navbar/>
       <div className="firstdiv aboutdiv">about</div>
+      <div className="contactdiv firstdiv" >About2</div>
+      <div className="homediv firstdiv" >About2</div>
     </>
   )
 }
